@@ -1,0 +1,30 @@
+<button onclick="myFunction()">Chat</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var text;
+  var favDrink = prompt("Hello! Talk To Me Below", "Commands");
+  switch(favDrink) {
+    case "What will we do?":
+      text = "(This Could Be Your Info. Do Not Leave It Blank)";
+      break;
+    case "Commands":
+      text = "1. Unresponsive 2. What will we do? 3. Tell a Joke 4. Tell me all about you";
+      break;
+    case "Unresposive":
+      text = "Reload The Page";
+      break;
+      case "Tell a Joke":
+      text = "What's brown, hairy, and waers sunglasses? A coconut on vacation";
+      break;
+      case "Tell me all about you":
+      text = "My jokes are powered by Apple's Siri. Some parts are open-source, like the 'What do we do?' page, you can program me to like what you like";
+      break;
+    default:
+      text = "Pardon Me?";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
